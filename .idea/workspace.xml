@@ -4,11 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7112f2b7-d9d2-4afb-bbaa-4e9c85018b4f" name="Changes" comment="" />
+    <list default="true" id="7112f2b7-d9d2-4afb-bbaa-4e9c85018b4f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/application/secondaryports/entity/CityEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/application/secondaryports/entity/CountryEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/application/secondaryports/entity/StateEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/application/secondaryports/repository/CityRepositoryCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/application/secondaryports/repository/CountryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/application/secondaryports/repository/StateRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/exceptions/ApplicationUcobetException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/exceptions/ControllerUcobetException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/exceptions/CrosscuttingUcobetException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/exceptions/DataUcobetException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/exceptions/DomainUcobetException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/exceptions/DtoUcobetException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/exceptions/EntityUcobetException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/exceptions/GeneralUcobetException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/exceptions/RuleUcobetException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/exceptions/UcobetException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/exceptions/UsecaselUcobetException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/exceptions/enums/Layer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/helpers/NumericHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/domain/city/rules/impl/CityIdDoesExistsRuleImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ucobet/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ucobet/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/application/secondaryports/entity/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/application/secondaryports/repository/CityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/helpers/ObjectHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/helpers/ObjectHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/helpers/TextHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/helpers/TextHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/helpers/UUIDHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/crosscutting/helpers/UUIDHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/domain/city/exceptions/CityIdDoesExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/domain/city/exceptions/CityIdDoesExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/domain/city/rules/CityIdDoesExistsRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/ucobet/src/main/java/co/edu/uco/ucobet/ucobet/generales/domain/city/rules/CityIdDoesExistsRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ucobet/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ucobet/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -21,6 +54,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "23",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Simon/Desktop/UCO/SEXTO SEMESTRE/ING.Software 2/UCOBET/ucobet",
@@ -32,14 +66,6 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.387" />
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.387" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

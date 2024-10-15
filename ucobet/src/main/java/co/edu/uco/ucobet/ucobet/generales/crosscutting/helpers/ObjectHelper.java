@@ -1,23 +1,17 @@
 package co.edu.uco.ucobet.ucobet.generales.crosscutting.helpers;
 
-public final class ObjectHelper {
-
-	private static final ObjectHelper INSTANCE = new ObjectHelper();
+public class ObjectHelper {
 
 	private ObjectHelper() {
-		super();
+
 	}
 
-	public static final ObjectHelper getObjectHelper() {
-		return INSTANCE;
+	public static <O> boolean isNull(final O object) {
+		return object == null;
 	}
 
-	public <O> boolean isNull(O objeto) {
-		return objeto == null;
-	}
-
-	public <O> O getDefaultValue(O objeto, O valorDefecto) {
-		return isNull(objeto) ? valorDefecto : objeto;
+	public static <O> O getDefault(final O object, final O defaultObject) {
+		return isNull(object) ? defaultObject : object;
 	}
 
 }

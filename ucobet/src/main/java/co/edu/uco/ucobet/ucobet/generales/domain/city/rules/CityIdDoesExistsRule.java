@@ -2,8 +2,11 @@ package co.edu.uco.ucobet.ucobet.generales.domain.city.rules;
 
 
 import co.edu.uco.ucobet.ucobet.generales.domain.DomainRule;
-import co.edu.uco.ucobet.ucobet.generales.domain.city.CityDomain;
+import org.springframework.stereotype.Service;
 
-public interface CityIdDoesExistsRule extends DomainRule<CityDomain> {
+import java.util.UUID;
+
+@Service
+public interface CityIdDoesExistsRule extends DomainRule<UUID> {
 
 }
