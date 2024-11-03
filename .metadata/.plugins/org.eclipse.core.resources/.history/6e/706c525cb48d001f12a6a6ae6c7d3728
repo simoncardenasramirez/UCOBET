@@ -1,0 +1,57 @@
+package co.edu.uco.UcoBet.generales.application.primaryports.mapper;
+
+import java.util.List;
+import java.util.UUID;
+
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+import org.mapstruct.Mappings;
+import org.mapstruct.Named;
+import org.mapstruct.factory.Mappers;
+
+import co.edu.uco.UcoBet.generales.application.primaryports.dto.city.RegisterNewCityDto;
+import co.edu.uco.UcoBet.generales.crosscutting.helpers.TextHelper;
+import co.edu.uco.UcoBet.generales.domain.city.CityDomain;
+import co.edu.uco.UcoBet.generales.domain.country.CountryDomain;
+import co.edu.uco.UcoBet.generales.domain.state.StateDomain;
+
+
+@Mapper
+public interface RegisterNewCityDtoMapper {
+
+    RegisterNewCityDtoMapper INSTANCE = Mappers.getMapper(RegisterNewCityDtoMapper.class);
+
+    @Mappings({
+        @Mapping(source = "state", target = "state", qualifiedByName = "mapUuidToStateDomain") // Uso de mapeo personalizado para state
+    })
+    RegisterNewCityDto toDto(CityDomain domain);
+
+    @Mappings({
+        @Mapping(source = "state", target = "state", qualifiedByName = "mapStateDomainToUuid") // Uso de mapeo personalizado para state
+    })
+    CityDomain toDomain(RegisterNewCityDto dto);
+
+    List<RegisterNewCityDto> toDTOCollection(List<CityDomain> domainCollection);
+
+    List<CityDomain> toDomainCollection(List<RegisterNewCityDto> dtoCollection);
+
+    // Mapeo personalizado para convertir UUID a StateDomain
+    @Named("mapUuidToStateDomain")
+    default StateDomain mapUuidToStateDomain(UUID value) {
+        if (value == null) {
+            return null;
+        }
+        StateDomain stateDomain = StateDomain.create(value, TextHelper.EMPTY, null , null);
+        return stateDomain;
+    }
+
+    // Mapeo personalizado para convertir StateDomain a UUID
+    @Named("mapStateDomainToUuid")
+    default UUID mapStateDomainToUuid(StateDomain stateDomain) {
+        if (stateDomain == null) {
+            return null;
+        }
+        return stateDomain.getId();
+    }
+}
+
